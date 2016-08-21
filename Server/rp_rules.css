@@ -1,0 +1,328 @@
+.morerules, .rulesheader, .baseHtml ul ol li, .baseHtml ul ol ol li, .baseHtml ol ul ol li {list-style-type: none}
+.baseHtml ol ol ul li, .baseHtml ol ul ul li, .baseHtml ul ol ul li, .baseHtml ul ul ul li {list-style-type: square}
+
+
+.advanced {
+	overflow: hidden;
+}
+
+.ruleset > h4 {
+	padding: 5px 10px 5px 10px;
+}
+
+.ruleset > ul {
+	padding: 0;
+	margin: 0;
+}
+
+.ruletable ol {
+	padding: 0px 20px 0px 30px;
+	margin: 0;
+}
+
+.ruletable ul > ul {
+	padding: 0px 20px 0px 40px;
+	margin: 0;
+}
+
+.ruletable {
+	text-align: left;
+	max-width: 800px;
+	width: 100%;
+	display: block;
+	margin: auto;
+}
+
+.rulesheader {
+	position: relative;
+	display: block;
+	padding-left: 10px;
+	margin-bottom: 10px;
+	
+	font-weight: bold;
+	color: rgb(255, 255, 255);
+	background-color: rgb(51, 51, 51);
+	border-bottom: 4px solid rgb(29, 29, 29);
+	
+	-webkit-box-shadow: inset rgba(255,255,255,0.06) 0px 1px 0px, inset rgba(255,255,255,0.06) 0px -1px 0px;
+    -moz-box-shadow: inset rgba(255,255,255,0.06) 0px 1px 0px, inset rgba(255,255,255,0.06) 0px -1px 0px;
+    -khtml-box-shadow: inset rgba(255,255,255,0.06) 0px 1px 0px, inset rgba(255,255,255,0.06) 0px -1px 0px;
+    box-shadow: inset rgba(255,255,255,0.06) 0px 1px 0px, inset rgba(255,255,255,0.06) 0px -1px 0px;
+	
+}
+
+.ruleset {
+	display: block;
+	margin: 0px 0px 40px 0px;
+	padding-bottom: 10px;
+	width: 100%;
+	
+	background: rgb(250, 250, 250) url("http://chronet.com/styles/chronet/xenforo/gradients/category-23px-light.png") repeat-x top;
+	background-image: -moz-linear-gradient(top, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0) 100%);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,0.35)), color-stop(100%,rgba(255,255,255,0)));
+	background-image: -webkit-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 100%);
+	background-image: -o-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 100%);
+	background-image: -ms-linear-gradient(top, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 100%);
+	background-image: linear-gradient(to bottom, rgba(255,255,255,0.35) 0%,rgba(255,255,255,0) 100%);
+	
+	border: 1px solid rgba(211, 211, 211, 0.35);
+	
+	-webkit-box-shadow: rgba(0,0,0,0.05) 0px 1px 4px;
+    -moz-box-shadow: rgba(0,0,0,0.05) 0px 1px 4px;
+    -khtml-box-shadow: rgba(0,0,0,0.05) 0px 1px 4px;
+    box-shadow: rgba(0,0,0,0.05) 0px 1px 4px;
+	
+}
+
+.bottomnotices {
+	position: relative;
+	bottom: 0;
+	left: 0;
+	margin-top: 40px;
+	display: block;
+}
+
+#modifieddate {
+	display: inline-block;
+}
+
+
+
+
+.morerulescontainer {
+	position: relative;
+	display: none;
+	height: 30px;
+	margin: 10px 10px 0px 10px;
+	
+	-webkit-border-radius: 4px 4px 4px 4px;
+	-moz-border-radius: 4px 4px 4px 4px;
+	-khtml-border-radius: 4px 4px 4px 4px;
+	border-radius: 4px 4px 4px 4px;
+	
+	cursor: default;
+}
+
+.morerulessprite {
+	position: relative;
+	display: inline-block;
+	height: 13px;
+	width: 13px;
+	left: 5px;
+	top: 2px;
+	background: url("http://chronet.com/styles/chronet/xenforo/xenforo-ui-sprite.png") no-repeat -32px 0px;
+}
+
+.morerulestext {
+	position: relative;
+	display: inline-block;
+	height: 100%;
+	text-indent: 7px;
+	font-style: italic;
+	
+	-webkit-text-shadow: 1px 1px 0px rgb(255, 255, 255);;
+	-moz-text-shadow: 1px 1px 0px rgb(255, 255, 255);
+	-khtml-text-shadow: 1px 1px 0px rgb(255, 255, 255);
+	text-shadow: 1px 1px 0px rgb(255, 255, 255);
+}
+
+.morerulescontainer, .allboxes {
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.morerulescontainer:hover {
+	background-color: rgb(237, 237, 237);
+}
+
+
+
+.baseHtml a, .baseHtml a:link, .baseHtml a:visited {
+	color: rgb(0,125,200);
+	text-decoration: underline;
+	display: inline-block;
+}
+
+.baseHtml a:hover, .baseHtml a:active {
+	color: rgb(0,180,250);
+	cursor: pointer;
+}
+
+#egg {
+	opacity: 0;
+	cursor: default;
+}
+
+.bottommenucontainer {
+	position: fixed;
+	width: 100%;
+	height: 40px;
+	bottom: 0;
+	display: none;
+	z-index: 90;
+}
+
+.bottommenu {
+	display: inline-block;
+	position: fixed;
+	overflow: hidden;
+	
+	width: 300px;
+	height: 40px;
+	bottom: -30px;
+	left: 50%;
+	
+	-webkit-transform:  translate(-50%, 0);
+	-moz-transform:  translate(-50%, 0);
+	-o-transform:  translate(-50%, 0);
+	-ms-transform:  translate(-50%, 0);
+	transform: translate(-50%, 0);
+	
+	background-color: rgb(34, 34, 34);
+	
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	-khtml-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+	
+	-webkit-box-shadow: 0px -1px 0px 0.5px rgba(63, 63, 63, 1);
+	-moz-box-shadow: 0px -1px 0px 0.5px rgba(63, 63, 63, 1);
+	-khtml-box-shadow: 0px -1px 0px 0.5px rgba(63, 63, 63, 1);
+	box-shadow: 0px -1px 0px 0.5px rgba(63, 63, 63, 1);
+	
+	cursor: default;
+}
+
+.allboxes {
+	position: absolute;
+	display: inline-block;
+	
+	-webkit-border-radius: 4px 4px 0px 0px;
+	-moz-border-radius: 4px 4px 0px 0px;
+	-khtml-border-radius: 4px 4px 0px 0px;
+	border-radius: 4px 4px 0px 0px;
+	width: 50%;
+	height: 100%;
+	
+	font-size: 17px;
+	text-align: center;
+	color: rgb(255, 255, 255);
+	
+	-webkit-text-shadow: 1px 2px 1px rgb(20, 20, 20);
+	-moz-text-shadow: 1px 2px 1px rgb(20, 20, 20);
+	-khtml-text-shadow: 1px 2px 1px rgb(20, 20, 20);
+	text-shadow: 1px 2px 1px rgb(20, 20, 20);
+}
+
+.allboxes:hover {
+	background: rgb(58, 58, 58);
+    background: -webkit-linear-gradient(rgb(30, 30, 30) 10%, rgb(45, 45, 45) 70%);
+    background: -o-linear-gradient(rgb(30, 30, 30) 10%, rgb(45, 45, 45) 70%);
+    background: -moz-linear-gradient(rgb(30, 30, 30) 10%, rgb(45, 45, 45) 70%);
+    background: linear-gradient(rgb(30, 30, 30) 10%, rgb(45, 45, 45) 70%);
+}
+
+#collapsebox {
+	right: 0;
+}
+
+#expandbox {
+	left: 0;
+}
+
+.rulesseparatorbar {
+	position: fixed;
+	display: block;
+	width: 1px;
+	height: 100%;
+	left: 149px;
+	z-index: 91;
+	
+	background-color: rgb(28, 28, 28);
+	
+	-webkit-box-shadow: 1px 0px 2px 0px rgb(45, 45, 45);
+	-moz-box-shadow: 1px 0px 2px 0px rgb(45, 45, 45);
+	-khtml-box-shadow: 1px 0px 2px 0px rgb(45, 45, 45);
+	box-shadow: 1px 0px 2px 0px rgb(45, 45, 45);
+}
+
+
+
+.modal {
+	display: none;
+	position: fixed;
+	z-index: 100;
+	padding-top: 100px;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	overflow: auto;
+	background-color: rgb(0,0,0);
+	background-color: rgba(0,0,0,0.9);
+}
+
+.modal-content {
+	margin: auto;
+	display: block;
+	width: 80%;
+	max-width: 700px;
+}
+
+@-webkit-keyframes zoom {
+	from {-webkit-transform: scale(0)} 
+	to {-webkit-transform: scale(1)}
+}
+
+@keyframes zoom {
+	from {-webkit-transform:  scale(0.1);
+		-moz-transform:  scale(0.1);
+		-o-transform:  scale(0.1);
+		-ms-transform:  scale(0.1);
+		transform: scale(0.1)} 
+	to {-webkit-transform:  scale(1);
+		-moz-transform:  scale(1);
+		-o-transform:  scale(1);
+		-ms-transform:  scale(1);
+		transform: scale(1)}
+}
+
+.modal-content {    
+	-webkit-animation-name: zoom;
+	-webkit-animation-duration: 0.6s;
+	animation-name: zoom;
+	animation-duration: 0.6s;
+}
+
+.close {
+	position: absolute;
+	top: 15px;
+	right: 35px;
+	color: rgb(241, 241, 241);
+	font-size: 40px;
+	font-weight: bold;
+	
+	-moz-transition: color 0.3s;
+	-ms-transition: color 0.3s;
+	-o-transition: color 0.3s;
+	-webkit-transition: color 0.3s;
+	transition: color 0.3s;
+}
+
+.close:hover, .close:focus {
+	/*color: #bbb;*/
+	color: rgb(187, 187, 187);
+	text-decoration: none;
+	cursor: pointer;
+}
+
+
+@media only screen and (max-width: 700px){
+	.modal-content {
+		width: 100%;
+    }
+}

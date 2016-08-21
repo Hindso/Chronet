@@ -1,0 +1,64 @@
+Changelog update pushed on 13/06/2016
+
+Features:
+Changed expand/collapse all menu to hide unless the cursor is near the bottom of the screen.
+	Also added a check which should hopefully prevent them from malfunctioning, although I can't locally replicate the bugs anyway
+Fixed the rule number prepending applying to lists not in the rules (e.g. the side menu)
+Fixed typos
+	Credit to @Chance for spotting one
+Attempted to add feature which automatically inserts the date at which the rules were last updated
+	Will see if it works properly when it's live
+		It's not throwing any errors, just that it doesn't have access, which shouldn't be a problem when it's hosted on the server itself
+Fixed base construction example images being renamed incorrectly
+
+
+
+Rules:
+Added rule specifically against limiting what weapons can penetrate props
+Clarified rule regarding the player's ability to get into a vehicle while being detained
+Changed rule regarding the theft of job-specific vehicles
+	Rule now concerns the theft of all vehicles
+	You may only steal a person's vehicle if you already have the right to kill them
+	Civilians may not respawn their stolen or impounded vehicles
+	Owners of job-specific vehicles may respawn their vehicles
+Added an example of powergaming. I'm not entirely sure that it's 100% clear, but I wanted to keep it brief
+Added rules on the legalisation of marijuana
+Added rules prohibiting the creation of sovereign nations / self-governing bodies without the permission of an online admin
+Added rule against the trading of in-game currency for real money etc
+
+
+
+Changelog update pushed on 04/08/2016
+
+Features:
+Added background to match side menu of rules page
+Reworked the rulenumber prepending system
+	Rules should not be nudged over at all now
+Reworked rule expansion system
+	Now relies on css transitions, rather than jquery toggling
+Adjusted z-index of modal so no longer any elements erroneously appearing over it
+
+
+Rules:
+Added rules against vigilantism
+	This includes clarifying that the mayor cannot have civilians act in their defence
+Changed wording on medicinal marijuana so as to be clear that you can legalise it for non-medical purposes too
+Tinkered with some rules to make wording more clear, no major changes not listed
+Added subnote specifically against using ladders to climb multi-story buildings
+Readded rule limiting entrances to 1 fading door, the rest may only be used on containers.
+
+
+
+Changelog update pushed on 15/08/2016
+
+Features:
+Prettied up.
+Fixed ability to CTRL + F rule numbers (e.g. 5.1.1).
+
+
+Rules:
+Added rule against threatening people with being banned
+Added rule against harassing and antagonizing players
+Reworded RDM section
+	Includes rule allowing players to be killed for repeated harassment
+	Reformatted section on friends
