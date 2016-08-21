@@ -62,3 +62,16 @@ Added rule against harassing and antagonizing players
 Reworded RDM section
 	Includes rule allowing players to be killed for repeated harassment
 	Reformatted section on friends
+
+
+
+Changelog update pushed on 21/08/2016
+
+Features:
+No new features :(
+
+Rules:
+Changed some rules on shooting windows
+	You must now be clearly visible when shooting someone through a shooting window, no bounding your vision so you're basically looking through a slit.
+Added rule against animated materials for shooting windows
+Added rule against using player animations during raids, except for surrender.
