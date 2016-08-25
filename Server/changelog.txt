@@ -73,5 +73,5 @@ No new features :(
 Rules:
 Changed some rules on shooting windows
 	You must now be clearly visible when shooting someone through a shooting window, no bounding your vision so you're basically looking through a slit.
-Added rule against animated materials for shooting windows
+	Added rule against animated materials for shooting windows
 Added rule against using player animations during raids, except for surrender.
