@@ -113,13 +113,20 @@ $(document).ready(function(){
 		rulesajax.send();
 	}
 	
-	getModifiedTime("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000), function(modifiedTime) {
+	getModifiedTime("Index.php?v=" + Math.floor(Math.random()*1000), function(modifiedTime) {
 		if (modifiedTime) {
 			$("#modifieddate").html(modifiedTime);
+			console.log("Last modified: " + modifiedTime);
 		} else {
-			getModifiedTime("js/chronet/rp_rules.js", function(modifiedTime) {
+			getModifiedTime("Index.php", function(modifiedTime) {
 				if (modifiedTime) {
 					$("#modifieddate").html(modifiedTime);
+				} else {
+					getModifiedTime("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000)", function(modifiedTime) {
+						if (modifiedTime) {
+							$("#modifieddate").html(modifiedTime);
+						}
+					});
 				}
 			});
 		}
