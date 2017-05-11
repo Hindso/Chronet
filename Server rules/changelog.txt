@@ -65,7 +65,7 @@ Reworded RDM section
 
 
 
-Changelog update pushed on 21/08/2016
+Changelog update 11/05/2017
 
 Features:
 No new features :(
