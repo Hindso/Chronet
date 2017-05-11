@@ -79,7 +79,13 @@ Rule against animated and distorted prop materials
 Rule on use of fading door usage
 	May only use one fading door as an entrance, all others can only be used for safes/containers
 Rule against stacking props so that the battering ram cannot get through them
-Rule on checkpoints [WIP]
-	Needs admin permission
+Rules on checkpoints. Most importantly:
+	Need admin permission to make a checkpoint
+	Need explicit admin permission to use frozen props to block off the areas around the checkpoint such that people have to go through the checkpoint to get through the area
+	Barriers cannot be frozen
+	Cannot hang or litter props over the road to slow vehicles down
+	Speedbumps are allowed but mustn't be able to fully stop a vehicle, or cause it to become stuck.
+	When not being manned, they must be left open
+	No fading doors
 Changed rule against threatening ban (requests) to include action by administration in general
 Changed the rule against rule-breaking roles such as serial killers, so that it explicitly mentions terrorists.
