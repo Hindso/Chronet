@@ -75,3 +75,11 @@ Changed some rules on shooting windows
 	You must now be clearly visible when shooting someone through a shooting window, no bounding your vision so you're basically looking through a slit.
 	Added rule against animated materials for shooting windows
 Added rule against using player animations during raids, except for surrender.
+Rule against animated and distorted prop materials
+Rule on use of fading door usage
+	May only use one fading door as an entrance, all others can only be used for safes/containers
+Rule against stacking props so that the battering ram cannot get through them
+Rule on checkpoints [WIP]
+	Needs admin permission
+Changed rule against threatening ban (requests) to include action by administration in general
+Changed the rule against rule-breaking roles such as serial killers, so that it explicitly mentions terrorists.

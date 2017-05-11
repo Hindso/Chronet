@@ -1,7 +1,7 @@
 <html>
 <link rel="stylesheet" type="text/css" href="rp_rules.css">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-<script type="text/javascript" src="rp_rules_js.js?v=5"></script>
+<script type="text/javascript" src="rp_rules_js.js?v=6"></script>
 <style>
 div {
 	font-size: 14px;
@@ -12,7 +12,7 @@ div {
 
 <!-- Do not include above when pushing -->
 
-<xen:require js="js/chronet/rp_rules.js?v=5" />
+<xen:require js="js/chronet/rp_rules.js?v=6" />
 <xen:require css="rp_rules.css" />
 
 <div class="baseHtml messageText">
@@ -116,9 +116,9 @@ div {
 							<li>Breaking any of the previously mentioned communication rules in party chat.</li>
 						</ul>
 					</li>
-					<li>12. Threaten others players with being banned, due to recorded evidence or otherwise.
+					<li>12. Threaten others players with action by community administration.
 						<ul>
-							<li>You do not have this authority, it is an admin's decision to make.</li>
+							<li>You do not have this authority, it is the staff's decision to make.</li>
 						</ul>
 					</li>
 					<li>13. Harass or antagonize other players.
@@ -200,7 +200,7 @@ div {
 					</li>
 					<li>13. Creating your own sovereign nation or self-governing body.
 						<ul>
-							<li>This may only be done with the permission of an admin who is online at the time.</li>
+							<li>This may only be done with the permission of an admin who is on the server at the time.</li>
 							<li>This applies to any form of group or community that attempts to remove itself from under the jurisdiction of the government of Rockford.</li>
 							<li>This also applies to players trying to wall off a part of the map, obstructing access to public areas.</li>
 						</ul>
@@ -209,6 +209,27 @@ div {
 						<ul>
 							<li>Civilians may not take the enforcement of the law into their own hands.</li>
 							<li>This includes acting in the defence of government officials.</li>
+						</ul>
+					</li>
+					<li>15. Job abuse.
+						<ul>
+							<li>Changing jobs in response to a situation, then responding to that situation. For example:
+								<ul>
+									<li>Changing to police or SWAT jobs in response to a raid.</li>
+									<li>Changing to the ERU job to revive or heal somebody, including yourself.</li>
+								</ul>
+							</li>
+						</ul>
+					</li>
+					<li>16. Creating checkpoints.
+						<ul>
+							<li>This may only be done with the permission of an admin who is on the server at the time.</li>
+							<li>Checkpoints must obey the following rules:
+								<ul>
+									<li></li>
+									<li></li>
+								</ul>
+							</li>
 						</ul>
 					</li>
 				</ol>
@@ -357,20 +378,21 @@ div {
 								<li><span class="Example_images" id="Example" target="fading_door_example.jpg"><a href="http://chronet.com/styles/chronet/custom/images/rules/fading_door_example.jpg" target="_blank">Example</a></span>.</li>
 							</ul>
 						</li>
-						<li>2. You must have either a button or keypad on each side of a fading door.</li>
-						<li>3. Fading doors must stay open once the button/keypad is pressed (i.e. they may not automatically close).</li>
-						<li>4. Keypads and buttons must be clearly visible, at eye-level and on, or directly next to, the connected fading door prop.
+						<li>2. Any secondary fading doors may only be used as storage.
+							<ul>
+								<li>You may not defend your base from inside these storage containers, they are only to be used to store items.</li>
+								<li>A secondary fading door is any that you encounter having already gone through a primary fading door, i.e. an entrance.</li>
+							</ul>
+						</li>
+						<li>3. You must have either a button or keypad on each side of a fading door.</li>
+						<li>4. Fading doors must stay open once the button/keypad is pressed (i.e. they may not automatically close).</li>
+						<li>5. Keypads and buttons must be clearly visible, at eye-level and on, or directly next to, the connected fading door prop.
 							<ul>
 								<li>You cannot hide or obfuscate keypads/buttons or their purpose in any way, including through the use of fake keypads/buttons.</li>
 								<li>You cannot force people to look at the ceiling or floor to access keypads/buttons.</li>
 							</ul>
 						</li>
-						<li>5. Fading door bridges or ladders are not allowed.</li>
-						<li>6. You may only use one fading door to act as an entrance.
-							<ul>
-								<li>Any other fading doors may only be used for containers.</li>
-							</ul>
-						</li>
+						<li>6. Fading door bridges or ladders are not allowed.</li>
 					</ol>
 					<li>2. All properties must be accessible by at least one entrance.
 						<ul>
@@ -389,11 +411,7 @@ div {
 							</ul>
 						</li>
 						<li>2. Shooting windows must be placed at least 4 tiles above the ground.</li>
-						<li>3. Shooting windows must be materialised or coloured to be mostly transparent.
-							<ul>
-								<li>This means you cannot use animated or distorted materials.</li>
-							</ul>
-						</li>
+						<li>3. Shooting windows must be materialised or coloured to be mostly transparent.</li>
 						<li>4. You must be clearly visible when shooting someone through a shooting window.
 							<ul>
 								<li>This means that you cannot abuse certain angles so you can barely be seen.</li>
@@ -402,20 +420,27 @@ div {
 					</ol>
 					<li>4. Props must obey the following rules:</li>
 					<ol id="5.4.">
-						<li>1. Props may not be materialised with pure black or white textures.</li>
-						<li>2. Props may not be made to be invisible, or extremely difficult to see.</li>
-						<li>3. Certain props are not allowed to be materialized.
+						<li>1. Props may not use pure black or white materials.</li>
+						<li>2. Props may not use materials that are animated or distort vision, except to specifically aid in roleplay.
+							<ul>
+								<li>This means that they cannot be used in bases.</li>
+							</ul>
+						</li>
+						<li>3. Props may not be made to be invisible, or extremely difficult to see.</li>
+						
+						<li>4. Certain props are not allowed to be materialised.
 							<ul>
 								<li>Bypassing any restrictions on props is considered cheating.</li>
 							</ul>
 						</li>
-						<li>4. Props may not be used to abuse the bullet penetration system.
+						<li>5. Props may not be used to abuse the bullet penetration system.
 							<ul>
 								<li>If you create a prop that bullets can penetrate, it must be penetrable from all sides.</li>
 								<li>You may not limit which guns are able to shoot through your props.</li>
 							</ul>
 						</li>
-						<li>5. You may not disable physics or collisions on props.</li>
+						<li>6. You may not disable physics or collisions on props.</li>
+						<li>7. You may not stack props so as to prevent the battering ram from being able to clear a path through them.</li>
 					</ol>
 					<li>5. Your base location must obey the following rules:</li>
 					<ol id="5.5.">
@@ -558,12 +583,13 @@ div {
 						<li>9. You may not raid someone for any small sounds, particle effects, etc created by contraband.</li>
 						<li>10. If there is an explosion or fire inside someone's property, you may forcefully check for the source.</li>
 						<li>11. You are not obligated to give a court hearing to anybody you have arrested.</li>
+						<li>12. You may only make checkpoints with the permission of an admin who is currently on the server.</li>
 					</ol>
 					<li>2. Citizens</li>
 					<ol id="8.2.">
 						<li>1. You may roleplay any job or character you wish.
 							<ul>
-								<li>Provided it does not break, or encourage breaking, any rules (e.g. serial killer or vigilante).</li>
+								<li>Provided it does not break, or encourage breaking, any rules (e.g. serial killer, terrorist, or vigilante).</li>
 							</ul>
 						</li>
 						<li>2. Should you be arrested, you are not entitled to a court hearing.
@@ -996,9 +1022,9 @@ div {
 	
 	<div class="bottomnotices">
 		<div>Last updated: 
-			<div id="modifieddate"></div>
+			<div id="modifieddate">N/A</div>
 		</div>
-		<div>&copy;2016 Chronet</div>
+		<div>&copy;2017 Chronet</div>
 	</div>
 	
 </div>

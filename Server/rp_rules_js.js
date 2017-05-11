@@ -6,7 +6,6 @@ $(document).ready(function(){
 	var morerulestext = document.getElementsByClassName("morerulestext");
 	
 	
-	
 	for (var i = 0; i<morerules.length; i++) {
 		morerules[i].style.display = "block";
 		advanced[i].style.height = "0px";
@@ -66,8 +65,6 @@ $(document).ready(function(){
 	});
 	
 	
-	
-	
 	var rule = document.querySelectorAll(".ruleset ol > li")	
 	for (var i = 0; i < rule.length; i++) {
 		var rulenumber = document.createElement("span");
@@ -100,29 +97,27 @@ $(document).ready(function(){
 		$(".modal").css("display","none");
 	});
 
-	var getModifiedTime = function(url, callback) {
-		
+	var getModifiedDate = function(url, callback) {
 		var rulesajax = new XMLHttpRequest();
 		rulesajax.open("GET", url, true);
 		rulesajax.onreadystatechange = function() {
 			if (rulesajax.readyState === 4 && rulesajax.status === 200) {
-				var modifiedTime = rulesajax.getResponseHeader("Last-Modified");
-				callback(modifiedTime);
+				var modifiedDate = new Date(rulesajax.getResponseHeader("Last-Modified"));
+				callback(modifiedDate);
 			}
 		};
 		rulesajax.send();
 	}
 	
-	getModifiedTime("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000), function(modifiedTime) {
-		if (modifiedTime) {
-			$("#modifieddate").html(modifiedTime);
+	getModifiedDate(window.location.href, function(modifiedDate) {
+		if (modifiedDate != "Invalid date") {
+			$("#modifieddate").html(modifiedDate);
 		} else {
-			getModifiedTime("js/chronet/rp_rules.js", function(modifiedTime) {
-				if (modifiedTime) {
-					$("#modifieddate").html(modifiedTime);
+			getModifiedDate("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000), function(modifiedDate) {
+				if (modifiedDate != "Invalid date") {
+					$("#modifieddate").html(modifiedDate);
 				}
 			});
 		}
 	});
-			
 });
