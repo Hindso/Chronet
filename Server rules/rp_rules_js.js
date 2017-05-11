@@ -114,7 +114,7 @@ $(document).ready(function(){
 	}
 	
 	getModifiedDate(window.location.href, function(modifiedDate) {
-		if (modifiedDate != "Invalid date" && modifiedDate != new Date()) {
+		if (modifiedDate != "Invalid date") {
 			$("#modifieddate").html(modifiedDate);
 		} else {
 			getModifiedDate("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000), function(modifiedDate) {
