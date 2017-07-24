@@ -68,7 +68,8 @@ Reworded RDM section
 Changelog update 11/05/2017
 
 Features:
-No new features :(
+Changed detection and display of last rule update date
+Fixed typo
 
 Rules:
 Changed some rules on shooting windows

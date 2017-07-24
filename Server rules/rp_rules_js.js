@@ -103,23 +103,23 @@ $(document).ready(function(){
 		rulesajax.onreadystatechange = function() {
 			if (rulesajax.readyState === 4 && rulesajax.status === 200) {
 				var modifiedDate = new Date(rulesajax.getResponseHeader("Last-Modified"));
-				if (modifiedDate != new Date()) {
-					callback(modifiedDate);
-				} else {
-					return "Invalid date";
-				}
+				callback(modifiedDate);
 			}
 		};
 		rulesajax.send();
 	}
 	
-	getModifiedDate(window.location.href, function(modifiedDate) {
+	function formatDate(date) {
+		return ((String(date.getDate()).length==2 ? date.getDate() : ("0" + date.getDate())) + "/" + (String(date.getMonth()).length==2 ? (date.getMonth()+1) : ("0" + (date.getMonth()+1))) + "/" + date.getFullYear());
+	}
+	
+	getModifiedDate("Rules.html", function(modifiedDate) {
 		if (modifiedDate != "Invalid date") {
-			$("#modifieddate").html(modifiedDate);
+			$("#modifieddate").html(formatDate(modifiedDate));
 		} else {
 			getModifiedDate("js/chronet/rp_rules.js?v=" + Math.floor(Math.random()*1000), function(modifiedDate) {
 				if (modifiedDate != "Invalid date") {
-					$("#modifieddate").html(modifiedDate);
+					$("#modifieddate").html(formatDate(modifiedDate));
 				}
 			});
 		}
